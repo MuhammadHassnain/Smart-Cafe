@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/round_border_primary"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        android:background="@drawable/round_background"
+        android:src="@color/colorPrimary"
+        android:id="@+id/iv_menu_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menu_name"
+        android:textStyle="bold"
+        android:text="FOOD"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/iv_menu_image"
+        android:textColor="@color/colorSecondaryText"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menu_price"
+        android:textStyle="bold"
+        android:text="RS 5000"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@id/iv_menu_image"
+        android:layout_toEndOf="@id/tv_menu_name"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorSecondaryText"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_menu_discription"
+        android:text="This is best food"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_menu_name"
+        />
+
+/>
+
+</RelativeLayout>

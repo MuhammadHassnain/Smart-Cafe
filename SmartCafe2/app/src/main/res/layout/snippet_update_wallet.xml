@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:background="@drawable/round_white_background"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="Update Customer Wallet"
+        android:paddingTop="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+
+        android:background="@color/colorPrimary"
+        android:id="@+id/tv_title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@id/tv_email"
+        android:text="EMAIL"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:hint="Enter Email Here"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_email"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Amount"
+        android:id="@+id/tv_amount"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_amount"
+        android:layout_below="@id/tv_amount"
+        android:inputType="number"
+        android:hint="Enter Amount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@id/et_amount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:text="Cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/secondary_round_background"
+            android:id="@+id/btn_update_wallet_cancel"
+            android:textColor="@color/colorWhite"
+            android:layout_marginEnd="10dp"/>
+        <Button
+            android:text="Update"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/primary_round_background"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_update_wallet_ok"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

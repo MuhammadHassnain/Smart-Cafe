@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_order"
+        android:title="My Order"
+        android:icon="@mipmap/purchase_order_64"/>
+
+    <item
+        android:id="@+id/nav_menu"
+        android:title="Menu"
+        android:icon="@mipmap/restaurant_menu_100"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        />
+
+</menu>

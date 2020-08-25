@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manager.smartcafe.AddMenuItemActivity">
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/iv_menu_image"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_add_a_photo_primary_96dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@id/iv_menu_image"
+        android:id="@+id/tv_menu_name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_menu_name"
+        android:id="@+id/et_menu_name"
+        android:hint="Enter Product Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_below="@id/et_menu_name"
+        android:id="@+id/tv_menu_price"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_menu_price"
+        android:id="@+id/et_menu_price"
+        android:hint="Price of Product"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@id/et_menu_price"
+        android:id="@+id/tv_menu_description"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description of product"
+        android:layout_below="@id/tv_menu_description"
+        android:id="@+id/et_menu_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ADD"
+        android:background="@drawable/primary_round_background"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_add_menu_item"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

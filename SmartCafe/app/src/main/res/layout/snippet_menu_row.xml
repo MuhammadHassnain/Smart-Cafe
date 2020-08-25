@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border_primary"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:src="@color/colorPrimary"
+        android:id="@+id/iv_menu_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menu_name"
+        android:textStyle="bold"
+        android:text="FOOD"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/iv_menu_image"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_menu_price"
+        android:textStyle="bold"
+        android:text="RS 5000"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@id/iv_menu_image"
+        android:layout_toEndOf="@id/tv_menu_name"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/tv_menu_discription"
+        android:text="This is best food"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_menu_name"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_menu_discription"
+        android:text="Order Now"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:id="@+id/btn_order_menu_item"
+        android:background="@drawable/secondary_round_background"
+        android:textColor="@color/colorWhite"/>
+
+
+</RelativeLayout>

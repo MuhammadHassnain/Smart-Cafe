@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border_primary"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/rl_customer_name"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Customer Name:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customer_name"
+            android:layout_weight="2"
+            android:text="Customer Name:"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/rl_item_name"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_customer_name"
+
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_name"
+            android:layout_weight="2"
+            android:text="food"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/rl_order_no"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_item_name"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order Number"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_order_no"
+            android:layout_weight="2"
+            android:text="2017-11-18"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/rl_payment_method"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_order_no"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment Method"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_payment_method"
+            android:layout_weight="2"
+            android:text="Customer Name:"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/rl_price"
+        android:layout_below="@id/rl_payment_method"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"
+            android:layout_weight="2"
+            android:text="Customer Name:"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_price"
+        android:id="@+id/view_status"
+        />
+
+
+
+</RelativeLayout>
